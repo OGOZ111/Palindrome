@@ -22,7 +22,7 @@ function App() {
           <input value={word} onChange={(e) => setWord(e.target.value)} />
         </div>
       </form>
-      <div>Is Palindrome:{PalinCheck ? "Yes" : "No"}</div>
+      <div>Is this word a palindome? {PalinCheck ? "Yes" : "No"}</div>
 
     </>
   )
