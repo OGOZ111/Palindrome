@@ -3,6 +3,8 @@ import { useMemo } from 'react';
 
 // NON RECURSIVE METHOD, USING BUILT IN JS FUNCTIONS
 
+// Empty text input will result positive result
+
 
 function App() {
 
