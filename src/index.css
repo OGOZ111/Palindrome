@@ -41,3 +41,8 @@
 .entry {
   padding: 5px;
 }
+
+.answer {
+  color: gold;
+  font-size: 20px;
+}

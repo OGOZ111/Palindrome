@@ -13,7 +13,6 @@ function App() {
     return word === word.split("").reverse().join("");
   }, [word]);
 
-
   return (
     <>
     <div className='container'>
@@ -24,7 +23,10 @@ function App() {
           <input className='entry' value={word} onChange={(e) => setWord(e.target.value)} />
         </div>
       </form>
-      <div className='result'>Is this word a palindome? {PalinCheck ? "Yes" : "No"}</div>
+      <div className='result'>Is this word a palindome?</div>
+      <div className='answer'>
+       {PalinCheck ? "Yes" : "No"}
+       </div>
       </div>
       </div>
 
