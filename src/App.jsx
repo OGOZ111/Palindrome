@@ -1,4 +1,3 @@
-import './App.css'
 import { useState } from 'react';
 import { useMemo } from 'react';
 
@@ -15,14 +14,17 @@ function App() {
 
   return (
     <>
-
+    <div className='container'>
+    <div className='box'>
       <form>
-        <div>
-          <label>Type in Word</label>
-          <input value={word} onChange={(e) => setWord(e.target.value)} />
+        <div >
+          <label> Type in Word -->  </label>
+          <input className='entry' value={word} onChange={(e) => setWord(e.target.value)} />
         </div>
       </form>
-      <div>Is this word a palindome? {PalinCheck ? "Yes" : "No"}</div>
+      <div className='result'>Is this word a palindome? {PalinCheck ? "Yes" : "No"}</div>
+      </div>
+      </div>
 
     </>
   )
